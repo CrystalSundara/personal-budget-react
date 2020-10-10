@@ -21,8 +21,8 @@ export class ChartsJS extends Component {
         chartLabels[i] = resData.data[i].title;
         values[i] = resData.data[i].budget;
     }
-    console.log(chartLabels);
-    console.log(values);
+    // console.log(chartLabels);
+    // console.log(values);
 
     this.setState({
         Data: {
@@ -52,6 +52,8 @@ export class ChartsJS extends Component {
     return (
         <div>
             <Pie data={this.state.Data}
+                width={400}
+                height={400}
                 options={{ maintainAspectRatio: false }} />
       </div>
     )

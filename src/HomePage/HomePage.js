@@ -1,5 +1,6 @@
 import React from 'react';
 import ChartsJS from '../ChartsJS/ChartsJS';
+import D3JS from '../D3JS/D3JS';
 
 function HomePage() {
   return (
@@ -72,7 +73,7 @@ function HomePage() {
         </section>
         <section className="donut">
             <h2>Budget chart donutified</h2>
-            <div id="d3Chart"></div>
+            <D3JS/>
         </section>  
 
     </main>
